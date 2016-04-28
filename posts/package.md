@@ -23,7 +23,7 @@ a) Library package: is used to generate the object files that can be reused by o
 		fmt.Println("Hello 中国!")
 	}
 
-b) Some other packages for special purposes, such as testing, etc.
+b) Some other packages for special purposes, such as testing.
 
 Nearly every program needs `Golang` standard (`$GOROOT`) or third-pary (`$GOPATH`) packages. To use them, you should use `import` statement:  
 
@@ -35,7 +35,12 @@ Or:
 		"fmt"
 		"github.com/NanXiao/stack"
 	)
-In the above examples, the "`fmt`" and "`github.com/NanXiao/stack`" are called `import path`, which is uses to find the relevant package.  
+In the above examples, the "`fmt`" and "`github.com/NanXiao/stack`" are called `import path`, which is used to find the relevant package.  
+
+You may also see the following cases:  
+
+	import m "lib/math" // use m as the math package name
+	import . "lib/math" // Omit package name when using math package
 
 If the `go install` command can't find the specified package, it will complain the error messages like this:  
 
@@ -46,6 +51,8 @@ If the `go install` command can't find the specified package, it will complain t
 To avoid library conflicts, you'd better make your own packages' path the only one in the world: E.g., your `github` repository destination:
 
 	 github.com/NanXiao/...
-Conventionally, your package name should be same with the last item in `import path`, but it is not must.  
+**Conventionally**, your package name should be same with the last item in `import path`; it is a good coding habit though not a must.  
+
+
 
  
