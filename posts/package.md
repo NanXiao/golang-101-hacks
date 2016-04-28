@@ -53,6 +53,9 @@ To avoid library conflicts, you'd better make your own packages' path the only o
 	 github.com/NanXiao/...
 **Conventionally**, your package name should be same with the last item in `import path`; it is a good coding habit though not a must.  
 
+Reference:  
+[The Go Programming Language](http://www.gopl.io/).
+
 
 
  
