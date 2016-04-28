@@ -25,3 +25,27 @@ a) Library package: is used to generate the object files that can be reused by o
 
 b) Some other packages for special purposes, such as testing, etc.
 
+Nearly every program needs `Golang` standard (`$GOROOT`) or third-pary (`$GOPATH`) packages. To use them, you should use `import` statement:  
+
+	import "fmt"
+	import "github.com/NanXiao/stack" 
+Or:  
+
+	import (
+		"fmt"
+		"github.com/NanXiao/stack"
+	)
+In the above examples, the "`fmt`" and "`github.com/NanXiao/stack`" are called `import path`, which is uses to find the relevant package.  
+
+If the `go install` command can't find the specified package, it will complain the error messages like this:  
+
+	... : cannot find package "xxxx" in any of:
+	        /usr/local/go/src/xxxx (from $GOROOT)
+	        /root/gowork/src/xxxx (from $GOPATH)
+
+To avoid library conflicts, you'd better make your own packages' path the only one in the world: E.g., your `github` repository destination:
+
+	 github.com/NanXiao/...
+Conventionally, your package name should be same with the last item in `import path`, but it is not must.  
+
+ 
