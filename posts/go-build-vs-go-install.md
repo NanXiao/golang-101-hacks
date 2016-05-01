@@ -100,4 +100,51 @@ Check the `$GOPATH` directory now:
 	
 	6 directories, 4 files
 
-Not only the `hello` command is generated and put into `bin` directory, but also the `greet.a` is in the `pkg`. While the `src` folder keeps clean with only source code files in it and unchanged.
+Not only the `hello` command is generated and put into `bin` directory, but also the `greet.a` is in the `pkg/linux_amd64`. While the `src` folder keeps clean with only source code files in it and unchanged.  
+
+(3) There is `-i` flag in `go build` command which will install the packages that are dependencies of the target, but won't install the target. Let's check it:  
+
+	# tree
+	.
+	├── bin
+	├── pkg
+	└── src
+	    ├── greet
+	    │   └── greet.go
+	    └── hello
+	        └── hello.go
+	
+	5 directories, 2 files
+
+Run `go build -i` under `hello` directory:  
+
+	# pwd
+	#/root/gowork/src/hello
+	# go build -i
+  
+Check `$GOPATH` now:  
+
+	# tree
+	.
+	├── bin
+	├── pkg
+	│   └── linux_amd64
+	│       └── greet.a
+	└── src
+	    ├── greet
+	    │   └── greet.go
+	    └── hello
+	        ├── hello
+	        └── hello.go
+Except a `hello` command in `src/hello` directory, a `greet.a` library is also generated in `pkg/linux_amd64` too.  
+
+(4) By default, the `go build` uses the directory's name as the compiled binary's name, to modify it, you can use `-o` flag:  
+
+	# pwd
+	/root/gowork/src/hello
+	# go build -o he
+	# ls
+	he  hello.go
+
+Now, the command is `he`, not `hello`.
+
