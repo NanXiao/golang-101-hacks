@@ -1,2 +1,3 @@
 # Golang 101 hacks
-A rudimentary Golang tutorial (Still ongoing now, will be updated non-periodically).
+----
+This is a on-going rudimentary Golang tutorial, and it will be updated non-periodically). You can read it online: [https://nanxiao.gitbooks.io/golang-101-hacks/content/](https://nanxiao.gitbooks.io/golang-101-hacks/content/).
