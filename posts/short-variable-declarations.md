@@ -8,7 +8,7 @@ It is shorthand of following (Please notice there is no type):
 
 	var i = 10
 
-The `Golang` compiler will refer the type according to the value of variable. It is a very handy feature, but on the other side of coin, it also brings some pitfalls which you should pay attention to:  
+The `Golang` compiler will infer the type according to the value of variable. It is a very handy feature, but on the other side of coin, it also brings some pitfalls which you should pay attention to:  
 
 (1) This format can only be used in functions:  
 
