@@ -1,6 +1,6 @@
 # “nil slice” vs “nil map”
 ----
-Slice and map are all reference types in `Golang`, and the their default values are `nil`:  
+Slice and map are all reference types in `Golang`, and their default values are `nil`:  
 
 	package main
 	
