@@ -1,4 +1,14 @@
 ### Summary
-
-* [Reallocating underlying array of slice](posts/create-golang-workspace.md)
+* [How to build Golang development environment](posts/how-to-build-golang-development-environment.md)  
+* [Create Golang workspace](posts/create-golang-workspace.md)
+* [Package](posts/package.md)
+* [“go build” and “go install”](posts/go-build-vs-go-install.md)
+* [Short variable declaration](posts/short-variable-declarations.md)
+* [“nil slice” vs “nil map”](posts/nil-slice-vs-nil-map.md)
+* [Prepend](posts/prepend.md)
+* [String](posts/string.md)
+* [The internals of slice](posts/the-internals-of-slice.md)
+* [Pass slice as a function argument](posts/pass-slice-as-a-function-argument.md)
+* [Two-dimensional slice](posts/two-dimensional-slice.md)
+* [Reallocating underlying array of slice](posts/reallocating-underlying-array-of-slice.md)
 * [Array](posts/array.md)

@@ -1,3 +1,5 @@
+# Array
+----
 In `Golang`, the length is also a part of array type. So the following code declares an array:  
 
 	var array [3]int

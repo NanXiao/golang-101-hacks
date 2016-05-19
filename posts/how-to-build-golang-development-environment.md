@@ -1,3 +1,5 @@
+# How to build Golang development environment
+----
 Build `Golang` development environment is always easy. Take `Linux` OS as an example (Because I work as a root user, so if you login as a non-root user, maybe you need `sudo` to execute some commands), what you should do is just download the binary package which matches your system from [here](https://golang.org/dl/), and uncompress it:
   
 	# wget https://storage.googleapis.com/golang/go1.6.2.linux-amd64.tar.gz

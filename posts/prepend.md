@@ -1,3 +1,5 @@
+# Prepend
+----
 `Golang` has a built-in [append](https://golang.org/pkg/builtin/#append) function which add elements in the slice:  
 	
 	func append(slice []Type, elems ...Type) []Type

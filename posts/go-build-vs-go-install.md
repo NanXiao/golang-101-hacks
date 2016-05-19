@@ -1,3 +1,5 @@
+# “go build” and “go install”
+----
 Let's tidy up the `$GOPATH` directory and only keep `Golang` source code files left over:  
 
 	# tree

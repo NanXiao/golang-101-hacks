@@ -1,3 +1,5 @@
+# Package
+----
 In `Golang`, the packages can be divided into `2` categories:  
 
 (1) `main` package: is used to generate the executable binary, and the `main` function is the entry point of the program. Take `hello.go` as an example:  

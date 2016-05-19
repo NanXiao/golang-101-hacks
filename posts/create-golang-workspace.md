@@ -1,3 +1,5 @@
+# Create Golang workspace
+----
 Once the `Golang` build environment is ready, the next step is to create workspace for development:  
 
 (1) Set up a new empty directory:  

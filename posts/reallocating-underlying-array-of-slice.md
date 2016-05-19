@@ -1,3 +1,5 @@
+# Reallocating underlying array of slice
+----
 When appending data into slice, if the underlying array of the slice doesn't have enough space, a new array will be allocated. Then the elements in old array will be copied into this new memory, accompanied with adding new data behind. So when using `Golang` built-in `append` function, you must always keep the idea that "the array may have been changed" in mind, and be very careful about it, otherwise, it may bite you!
 
 Let me explain it through a contrived example:  

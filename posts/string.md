@@ -1,3 +1,5 @@
+# String
+----
 In `Golang`, string is an immutable array of bytes. So if created, we can't change its value. E.g.:  
 
 	package main

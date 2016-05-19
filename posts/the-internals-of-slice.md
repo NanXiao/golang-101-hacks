@@ -1,3 +1,5 @@
+# The internals of slice
+----
 There are `3` components of slice:  
 a) `Pointer`: Points to the start position of slice in the underlying array;  
 b) `length` (type is `int`): the number of the valid elements of the slice;  

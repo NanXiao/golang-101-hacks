@@ -1,2 +1,2 @@
-# golang-101-hacks
-Some random posts about golang.
+# Golang 101 hacks
+A rudimentary Golang tutorial.

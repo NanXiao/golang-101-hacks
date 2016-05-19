@@ -1,3 +1,5 @@
+# Short variable declaration
+----
 Short variable declaration is a very convenient manner of "declaring variable" in `Golang`:  
 
 	i := 10
