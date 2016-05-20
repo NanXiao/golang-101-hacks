@@ -87,7 +87,7 @@ The output is:
 
 	0 is a valid key
 	1 is a valid key
-Using built-in `delete` function, you can delete a entry in the map, even the key doesn't exist:  
+Using built-in `delete` function, you can remove an entry in the map, even the key doesn't exist:  
 
 	delete(map, key)
 
