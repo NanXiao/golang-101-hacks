@@ -1,6 +1,6 @@
-# Create Golang workspace
+# Create Go workspace
 ----
-Once the `Golang` build environment is ready, the next step is to create workspace for development:  
+Once the `Go` build environment is ready, the next step is to create workspace for development:  
 
 (1) Set up a new empty directory:  
 
@@ -16,7 +16,7 @@ Once the `Golang` build environment is ready, the next step is to create workspa
 
 The workspace should contain `3` subdirectories:  
 
->src: contains the Golang source code.  
+>src: contains the Go source code.  
 >pkg: contains the package objects. You could think them as libraries which are used in linkage stage to generate the final executable files.  
 >bin: contains the executable files. 
 
@@ -31,11 +31,11 @@ Let's see an example:
 	
 	1 directory, 0 files
 
-(2) Since `Golang` organizes source code using "`package`" concept , and every "`package`" should occupy a distinct directory, I create a `greet` directory in `src`:  
+(2) Since `Go` organizes source code using "`package`" concept , and every "`package`" should occupy a distinct directory, I create a `greet` directory in `src`:  
 
 	# mkdir src/greet
 
-Then create a new `Golang` source code file (`greet.go`) in `src/greet`:  
+Then create a new `Go` source code file (`greet.go`) in `src/greet`:  
 
 	# cat src/greet/greet.go
 	package greet

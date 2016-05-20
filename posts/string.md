@@ -1,6 +1,6 @@
 # String
 ----
-In `Golang`, string is an immutable array of bytes. So if created, we can't change its value. E.g.:  
+In `Go`, string is an immutable array of bytes. So if created, we can't change its value. E.g.:  
 
 	package main
 	
@@ -30,7 +30,7 @@ The result is like this:
 
 	hello
 
-Since `Golang` uses `UTF-8` encoding, you must remember the `len` function will return the a string's byte number, not character number:  
+Since `Go` uses `UTF-8` encoding, you must remember the `len` function will return the a string's byte number, not character number:  
 
 	package main
 	

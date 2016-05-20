@@ -1,6 +1,6 @@
 # Array
 ----
-In `Golang`, the length is also a part of array type. So the following code declares an array:  
+In `Go`, the length is also a part of array type. So the following code declares an array:  
 
 	var array [3]int
 while "`var slice []int`" defines a slice. Because of this characteristic, arrays with the same array element type but different length can't assign values each other. I.E.:
@@ -43,7 +43,7 @@ The output is:
 
 	[3]int []int
 
-Additionally, since in `Golang`, the function argument is passed by "value", so if you use an array as a function argument, the function just does the operations on the copy of the original copy. Check the following code: 
+Additionally, since in `Go`, the function argument is passed by "value", so if you use an array as a function argument, the function just does the operations on the copy of the original copy. Check the following code: 
 
 	package main
 

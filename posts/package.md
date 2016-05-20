@@ -1,6 +1,6 @@
 # Package
 ----
-In `Golang`, the packages can be divided into `2` categories:  
+In `Go`, the packages can be divided into `2` categories:  
 
 (1) `main` package: is used to generate the executable binary, and the `main` function is the entry point of the program. Take `hello.go` as an example:  
 
@@ -27,7 +27,7 @@ a) Library package: is used to generate the object files that can be reused by o
 
 b) Some other packages for special purposes, such as testing.
 
-Nearly every program needs `Golang` standard (`$GOROOT`) or third-pary (`$GOPATH`) packages. To use them, you should use `import` statement:  
+Nearly every program needs `Go` standard (`$GOROOT`) or third-pary (`$GOPATH`) packages. To use them, you should use `import` statement:  
 
 	import "fmt"
 	import "github.com/NanXiao/stack" 
