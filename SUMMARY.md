@@ -11,4 +11,5 @@
 * [Pass slice as a function argument](posts/pass-slice-as-a-function-argument.md)
 * [Two-dimensional slice](posts/two-dimensional-slice.md)
 * [Reallocating underlying array of slice](posts/reallocating-underlying-array-of-slice.md)
-* [Array](posts/array.md)
+* [Array](posts/array.md)  
+* [Accessing map](posts/accessing-map.md)
