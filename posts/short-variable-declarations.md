@@ -73,4 +73,4 @@ In `i, err := 2, false` statement, only `err` is a new declared variable, `var` 
 	}
 
 参考资料：  
-[Short variable declarations](https://golang.org/ref/spec#Short_variable_declarations)；
+[Short variable declarations](https://golang.org/ref/spec#Short_variable_declarations).
