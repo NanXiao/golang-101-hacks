@@ -85,13 +85,13 @@ Through the output, we can see no matter the source slice is ahead of destinatio
 	
 	func main() {
 		d := make([]byte, 20, 30)
-		fmt.Println(copy(d, "Hello, 中国！"))
+		fmt.Println(copy(d, "Hello, 中国"))
 		fmt.Println(string(d))
 	} 
 
 The output is:  
 
 	16
-	Hello, 中国！  
+	Hello, 中国
 Reference:  
 [copy() behavior when overlapping](https://groups.google.com/forum/#!msg/Golang-Nuts/HI6RI18S8L0/v6xevVPeS9EJ).  
