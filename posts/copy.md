@@ -15,7 +15,16 @@ Let's see a basic example in which source and destination slices aren't overlapp
 	)
 	
 	func main() {
-			
+		for _, s := range [][]int{{2, 2}, {2, 2, 2}, {2, 2, 2, 2}} {
+			d := make([]int, 3, 5)
+			for i := 0; i < 3; i++ {
+				d[i] = 1
+			}
+			fmt.Println("Before copying (destination slice): ", d)
+			fmt.Println("Copy length is: ", copy(d, s))
+			fmt.Println("After copying (destination slice): ", d)
+		}
+	
 	}
 In the above example, the destination slice's length is `3`, and the source slice's length can be `2`, `3`, `4`. Check the result:  
 
