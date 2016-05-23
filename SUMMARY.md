@@ -14,3 +14,4 @@
 * [copy](posts/copy.md)  
 * [Array](posts/array.md)  
 * [Accessing map](posts/accessing-map.md)
+* [switch](posts/switch.md)
