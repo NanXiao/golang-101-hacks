@@ -15,26 +15,34 @@ Let's see a basic example in which source and destination slices aren't overlapp
 	)
 	
 	func main() {
-		for _, s := range [][]int{{2, 2}, {2, 2, 2}, {2, 2, 2, 2}} {
-			d := make([]int, 3, 5)
-			for i := 0; i < 3; i++ {
-				d[i] = 1
-			}
-			fmt.Println("Before copying (destination slice): ", d)
-			fmt.Println("Copy length is: ", copy(d, s))
-			fmt.Println("After copying (destination slice): ", d)
-		}
+		d := make([]int, 3, 5)
+		s := []int{2, 2}
+		fmt.Println("Before copying (destination slice): ", d)
+		fmt.Println("Copy length is: ", copy(d, s))
+		fmt.Println("After copying (destination slice): ", d)
+	
+		d = make([]int, 3, 5)
+		s = []int{2, 2, 2}
+		fmt.Println("Before copying (destination slice): ", d)
+		fmt.Println("Copy length is: ", copy(d, s))
+		fmt.Println("After copying (destination slice): ", d)
+	
+		d = make([]int, 3, 5)
+		s = []int{2, 2, 2, 2}
+		fmt.Println("Before copying (destination slice): ", d)
+		fmt.Println("Copy length is: ", copy(d, s))
+		fmt.Println("After copying (destination slice): ", d)
 	
 	}
 In the above example, the destination slice's length is `3`, and the source slice's length can be `2`, `3`, `4`. Check the result:  
 
-	Before copying (destination slice):  [1 1 1]
+	Before copying (destination slice):  [0 0 0]
 	Copy length is:  2
-	After copying (destination slice):  [2 2 1]
-	Before copying (destination slice):  [1 1 1]
+	After copying (destination slice):  [2 2 0]
+	Before copying (destination slice):  [0 0 0]
 	Copy length is:  3
 	After copying (destination slice):  [2 2 2]
-	Before copying (destination slice):  [1 1 1]
+	Before copying (destination slice):  [0 0 0]
 	Copy length is:  3
 	After copying (destination slice):  [2 2 2]
 	
@@ -91,7 +99,7 @@ Through the output, we can see no matter the source slice is ahead of destinatio
 
 The output is:  
 
-	16
+	13
 	Hello, 中国
 Reference:  
 [copy() behavior when overlapping](https://groups.google.com/forum/#!msg/Golang-Nuts/HI6RI18S8L0/v6xevVPeS9EJ).  
