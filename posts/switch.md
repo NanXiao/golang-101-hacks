@@ -24,7 +24,7 @@ The output is:
 
 	The value is:  1
 
-Your real intention is the "`fmt.Println("The value is: ", val)`" will be executed when `val` is `0` or `1`, but in fact, the statement only take effect when `val` is `1`. To fulfill your request, there are `2` methods:  
+Your real intention is the "`fmt.Println("The value is: ", val)`" will be executed when `val` is `0` or `1`, but in fact, the statement only takes effect when `val` is `1`. To fulfill your request, there are `2` methods:  
 
 (1) Use `fallthrough`:  
 
