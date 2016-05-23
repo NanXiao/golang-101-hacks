@@ -15,7 +15,8 @@ Let's see a basic example in which source and destination slices aren't overlapp
 	)
 	
 	func main() {
-		for _, s := range [] []int{{2, 2}, {2, 2, 2}, {2, 2, 2, 2}} {
+		source := [][]int{{2, 2}, {2, 2, 2}, {2, 2, 2, 2}}
+		for _, s := range source {
 			d := make([]int, 3, 5)
 			for i := 0; i < 3; i++ {
 				d[i] = 1
