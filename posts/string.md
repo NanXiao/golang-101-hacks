@@ -13,7 +13,7 @@ The compiler will complain:
 
 	cannot assign to s[0] 
 
-To modify the content of a string, you could convert it to a `byte` array. But in fact, you **are not** operate on the original string, just a copy:  
+To modify the content of a string, you could convert it to a `byte` array. But in fact, you **do not** operate on the original string, just a copy:  
 
 	package main
 	
@@ -30,7 +30,7 @@ The result is like this:
 
 	hello
 
-Since `Go` uses `UTF-8` encoding, you must remember the `len` function will return the a string's byte number, not character number:  
+Since `Go` uses `UTF-8` encoding, you must remember the `len` function will return the string's byte number, not character number:  
 
 	package main
 	
