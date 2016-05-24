@@ -14,4 +14,5 @@
 * [copy](posts/copy.md)  
 * [Array](posts/array.md)  
 * [Accessing map](posts/accessing-map.md)
-* [switch](posts/switch.md)
+* [switch](posts/switch.md)  
+* [Check data race](posts/check-data-race.md)
