@@ -1,6 +1,6 @@
 # Check data race
 ----
-"Data race" is a common but notorious issue in concurrency programs. sometimes it is difficult to debug and reproduce, especially in some big system, so this will make people very frustrated. Thankfully, the `Go` toolchain provides a `race detector` which can help us quickly spot and fix this kind of issue, and this can save our time even lives!  
+"Data race" is a common but notorious issue in concurrency programs. sometimes it is difficult to debug and reproduce, especially in some big system, so this will make people very frustrated. Thankfully, the `Go` toolchain provides a `race detector` (now only works on `amd64` platform.) which can help us quickly spot and fix this kind of issue, and this can save our time even lives!  
 
 Take the following classic "data race" program as an example:  
 
