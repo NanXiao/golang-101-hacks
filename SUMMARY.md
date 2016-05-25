@@ -16,3 +16,4 @@
 * [Accessing map](posts/accessing-map.md)
 * [switch](posts/switch.md)  
 * [Check data race](posts/check-data-race.md)
+* [Sort](posts/sort.md)
