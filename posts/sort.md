@@ -53,4 +53,46 @@ Check the running result of the program:
 	Before sorting:  [{breakpoint} {help} {args} {continue}]
 	After sorting:  [{args} {breakpoint} {continue} {help}]
 
-We can see after sorting, the items in `c` are rearranged.
+We can see after sorting, the items in `c` are rearranged.  
+
+Additionally, if you pick at the performance, you may define a slice whose type is the pointer, because switching pointer is much quicker if the size of element is very big. Modify the above example:  
+
+	package main
+	
+	import (
+		"fmt"
+		"sort"
+	)
+	
+	type command struct  {
+		name string
+		help string
+	}
+	
+	type byName []*command
+	
+	func (a byName) Len() int           { return len(a) }
+	func (a byName) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
+	func (a byName) Less(i, j int) bool { return a[i].name < a[j].name }
+	
+	func main() {
+		c := []*command{
+			{"breakpoint", "Set breakpoints"},
+			{"help", "Show help"},
+			{"args", "Print arguments"},
+			{"continue", "Continue"},
+		}
+		fmt.Println("Before sorting: ", c)
+		sort.Sort(byName(c))
+		fmt.Println("After sorting: ", c)
+	}
+
+Check the executing result:  
+
+	Before sorting:  [0xc0820066a0 0xc0820066c0 0xc0820066e0 0xc082006700]
+	After sorting:  [0xc0820066e0 0xc0820066a0 0xc082006700 0xc0820066c0]
+
+You can see the pointers are reordered.
+
+Reference:
+[The Go Programming Language](http://www.gopl.io/).
