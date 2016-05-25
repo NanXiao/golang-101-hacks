@@ -94,5 +94,5 @@ Check the executing result:
 
 You can see the pointers are reordered.
 
-Reference:
+Reference:  
 [The Go Programming Language](http://www.gopl.io/).
