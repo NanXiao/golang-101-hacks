@@ -17,3 +17,4 @@
 * [switch](posts/switch.md)  
 * [Check data race](posts/check-data-race.md)
 * [Sort](posts/sort.md)
+* [range](posts/range.md)
