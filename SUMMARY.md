@@ -13,6 +13,7 @@
 * [Reallocating underlying array of slice](posts/reallocating-underlying-array-of-slice.md)
 * [copy](posts/copy.md)  
 * [Array](posts/array.md)  
+* [Conversion between array and slice](posts/conversion-between-array-and-slice.md)
 * [Accessing map](posts/accessing-map.md)
 * [switch](posts/switch.md)  
 * [Check data race](posts/check-data-race.md)
