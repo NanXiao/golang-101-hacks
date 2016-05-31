@@ -21,3 +21,4 @@
 * [range](posts/range.md)
 * [Debugging](posts/debugging.md)
 * [Goroutine](posts/goroutine.md)
+* [error vs errors](posts/error-vs-errors.md)
