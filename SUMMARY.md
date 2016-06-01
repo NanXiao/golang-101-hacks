@@ -2,6 +2,7 @@
 * [How to build Go development environment](posts/how-to-build-go-development-environment.md)  
 * [Create Go workspace](posts/create-go-workspace.md)
 * [Package](posts/package.md)
+* ["go get" command](posts/go-get-command.md)
 * [“go build” and “go install”](posts/go-build-vs-go-install.md)
 * [Short variable declaration](posts/short-variable-declarations.md)
 * [“nil slice” vs “nil map”](posts/nil-slice-vs-nil-map.md)
