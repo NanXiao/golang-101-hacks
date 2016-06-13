@@ -82,4 +82,6 @@ The executing result is as follows:
 	Func goroutine sends data:  5
 	Main goroutine received data: 4
 	Main goroutine received data: 5
-In this sample, since the channel has `2` slots, so the `func` goroutine will not block until it sends the third element.
+In this sample, since the channel has `2` slots, so the `func` goroutine will not block until it sends the third element.  
+
+P.S., "`make(chan int, 0)`" is equal to "`make(chan int)`", and it will create an unbuffered `int` channel too.
