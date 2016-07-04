@@ -26,4 +26,5 @@
 * [Functional literals](posts/functional-literals.md)
 * [error vs errors](posts/error-vs-errors.md)
 * [Unbuffered and buffered channels](posts/unbuffered-and-buffered-channels.md)
+* [Channel types](posts/channel-types.md)
 * [Processing JSON object](posts/processing-json-object.md)
