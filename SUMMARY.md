@@ -27,4 +27,5 @@
 * [error vs errors](posts/error-vs-errors.md)
 * [Unbuffered and buffered channels](posts/unbuffered-and-buffered-channels.md)
 * [Channel types](posts/channel-types.md)
+* [nil channel VS closed channel](posts/nil-channel-vs-closed-channel.md)
 * [Processing JSON object](posts/processing-json-object.md)
