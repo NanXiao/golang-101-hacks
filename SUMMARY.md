@@ -29,4 +29,5 @@
 * [Channel types](posts/channel-types.md)
 * [Unbuffered and buffered channels](posts/unbuffered-and-buffered-channels.md)
 * [nil channel VS closed channel](posts/nil-channel-vs-closed-channel.md)
+* [Select operation](posts/select-operation.md)
 * [Processing JSON object](posts/processing-json-object.md)
