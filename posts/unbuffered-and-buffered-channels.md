@@ -1,6 +1,6 @@
 Unbuffered and buffered channels
 ----
-`Go`'s built-in `channel` type provides a handy method for communicating and synchronizing. The channel is divided into two categories: unbuffered and buffered.  
+The channel is divided into two categories: unbuffered and buffered.  
 
 (1) Unbuffered channel  
 For unbuffered channel, the sender will block on the channel until the receiver receives the data from the channel, whilst the receiver will also block on the channel until sender sends data into the channel. Check the following example:  
