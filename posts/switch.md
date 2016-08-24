@@ -1,4 +1,4 @@
-switch
+# switch
 ----
 Compared to other programming languages (such as `C`), `Go`'s `switch-case` statement doesn't need explicit "`break`", and not have `fall-though` characteristic. Take the following code as an example:  
 
