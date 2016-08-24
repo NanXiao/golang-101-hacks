@@ -90,6 +90,6 @@ The running result is here:
 Compared to `type assertion`, `type switch` uses keyword `type` instead of the specified variable type (such as `int`) in the parentheses.  
 
 References:  
-[Effective Go](https://golang.org/doc/effective_go.html);
+[Effective Go](https://golang.org/doc/effective_go.html);  
 [Go – x.(T) Type Assertions](https://codingair.wordpress.com/2014/07/21/go-x-t-type-assertions/);  
 [How to find a type of a object in Golang?](http://stackoverflow.com/questions/20170275/how-to-find-a-type-of-a-object-in-golang).
