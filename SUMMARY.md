@@ -25,6 +25,7 @@
 * [Debugging](posts/debugging.md)
 * [Goroutine](posts/goroutine.md)
 * [Functional literals](posts/functional-literals.md)
+* [defer](posts/defer.md)
 * [error vs errors](posts/error-vs-errors.md)
 * [Send and receive operations on channel](posts/send-and-receive-operations-on-channel.md)
 * [Channel types](posts/channel-types.md)
