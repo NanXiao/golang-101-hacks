@@ -4,7 +4,7 @@
 * [Package](posts/package.md)
 * [“go build” and “go install”](posts/go-build-vs-go-install.md)
 * ["go get" command](posts/go-get-command.md)
-* [Use govendor to implement vendoring](post/use-govendor-to-implement-vendoring.md)
+* [Use govendor to implement vendoring](posts/use-govendor-to-implement-vendoring.md)
 * [init function](posts/init-function.md)
 * [Short variable declaration](posts/short-variable-declarations.md)
 * [“nil slice” vs “nil map”](posts/nil-slice-vs-nil-map.md)
