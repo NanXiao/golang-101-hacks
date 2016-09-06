@@ -19,6 +19,7 @@
 * [Conversion between array and slice](posts/conversion-between-array-and-slice.md)
 * [Accessing map](posts/accessing-map.md)
 * [switch](posts/switch.md)
+* [Interface](posts/interface.md)
 * [Type assertion and type switch](posts/type-assertion-and-type-switch.md)
 * [Check data race](posts/check-data-race.md)
 * [Sort](posts/sort.md)
