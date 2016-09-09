@@ -21,7 +21,7 @@
 * [switch](posts/switch.md)
 * [Interface](posts/interface.md)
 * [Type assertion and type switch](posts/type-assertion-and-type-switch.md)
-* [Types](post/types.md)
+* [Types](posts/types.md)
 * [Check data race](posts/check-data-race.md)
 * [Sort](posts/sort.md)
 * [range](posts/range.md)
