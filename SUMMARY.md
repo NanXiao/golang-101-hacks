@@ -23,6 +23,7 @@
 * [Type assertion and type switch](posts/type-assertion-and-type-switch.md)
 * [Types](posts/types.md)
 * [io.Reader interface](posts/io-reader-interfaces.md)
+* [Decorate types to implement io.Reader interface](posts/decorate-types-to-implement-io-reader-interface.md)
 * [Check data race](posts/check-data-race.md)
 * [Sort](posts/sort.md)
 * [range](posts/range.md)
