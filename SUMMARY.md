@@ -24,6 +24,7 @@
 * [Types](posts/types.md)
 * [io.Reader interface](posts/io-reader-interfaces.md)
 * [Decorate types to implement io.Reader interface](posts/decorate-types-to-implement-io-reader-interface.md)
+* [io.Writer interface](posts/io-writer-interface.md)
 * [Check data race](posts/check-data-race.md)
 * [Sort](posts/sort.md)
 * [range](posts/range.md)
