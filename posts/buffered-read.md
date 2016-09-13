@@ -14,23 +14,22 @@ You can see `test.txt` contains `4` lines.
 (2) See the following program:  
 
 	package main
-	
+
 	import (
 	        "bufio"
-	        "bytes"
 	        "fmt"
 	        "io"
-	        "io/ioutil"
 	        "log"
+	        "os"
 	)
 	
 	func main() {
-	        p, err := ioutil.ReadFile("test.txt")
+	        f, err := os.Open("test.txt")
 	        if err != nil {
 	                log.Fatal(err)
 	        }
 	
-	        r := bufio.NewReader(bytes.NewReader(p))
+	        r := bufio.NewReader(f)
 	        for {
 	                if s, err := r.ReadSlice('\n'); err == nil || err == io.EOF {
 	                        fmt.Printf("%s", s)
@@ -44,16 +43,17 @@ You can see `test.txt` contains `4` lines.
 	        }
 	}
 
+
 (a)  
 
-	p, err := ioutil.ReadFile("test.txt")
-`ioutil.ReadFile("test.txt")` reads the whole content of `test.txt` into a slice: `p`.  
+	f, err := os.Open("test.txt")
+Open `test.txt` file.  
 
 (b)  
 
-	r := bufio.NewReader(bytes.NewReader(p))
+	r := bufio.NewReader(f)
 
-`bufio.NewReader(bytes.NewReader(p))` creates a [bufio.Reader](https://golang.org/pkg/bufio/#Reader) struct which implements buffered read function.  
+`bufio.NewReader(f)` creates a [bufio.Reader](https://golang.org/pkg/bufio/#Reader) struct which implements buffered read function.  
 
 (c)  
 
@@ -83,19 +83,18 @@ We can also use [bufio.Scanner](https://golang.org/pkg/bufio/#Scanner) to implem
 
 	import (
 	        "bufio"
-	        "bytes"
 	        "fmt"
-	        "io/ioutil"
 	        "log"
+	        "os"
 	)
 	
 	func main() {
-	        p, err := ioutil.ReadFile("test.txt")
+	        f, err := os.Open("test.txt")
 	        if err != nil {
 	                log.Fatal(err)
 	        }
 	
-	        s := bufio.NewScanner(bytes.NewReader(p))
+	        s := bufio.NewScanner(f)
 	
 	        for s.Scan() {
 	                fmt.Println(s.Text())
@@ -105,8 +104,8 @@ We can also use [bufio.Scanner](https://golang.org/pkg/bufio/#Scanner) to implem
 
 (a)  
 
-	s := bufio.NewScanner(bytes.NewReader(p))
-`bufio.NewScanner(bytes.NewReader(p))` creates a new [bufio.Scanner](https://golang.org/pkg/bufio/#Scanner) struct which splits the content by line by default.  
+	s := bufio.NewScanner(f)
+`bufio.NewScanner(f)` creates a new [bufio.Scanner](https://golang.org/pkg/bufio/#Scanner) struct which splits the content by line by default.  
 
 (b)  
 
@@ -118,22 +117,21 @@ We can also use [bufio.Scanner](https://golang.org/pkg/bufio/#Scanner) to implem
 We can also customize [SplitFunc](https://golang.org/pkg/bufio/#SplitFunc) function which doesn't separate content by line. Check the following code:  
 
 	package main
-	
+
 	import (
 	        "bufio"
-	        "bytes"
 	        "fmt"
-	        "io/ioutil"
 	        "log"
+	        "os"
 	)
 	
 	func main() {
-	        p, err := ioutil.ReadFile("test.txt")
+	        f, err := os.Open("test.txt")
 	        if err != nil {
 	                log.Fatal(err)
 	        }
 	
-	        s := bufio.NewScanner(bytes.NewReader(p))
+	        s := bufio.NewScanner(f)
 	        split := func(data []byte, atEOF bool) (advance int, token []byte, err error) {
 	                for i := 0; i < len(data); i++ {
 	                        if data[i] == 'h' {
@@ -148,6 +146,7 @@ We can also customize [SplitFunc](https://golang.org/pkg/bufio/#SplitFunc) funct
 	                fmt.Println(s.Text())
 	        }
 	}
+
 The `split` function separates the content by "`h`", and the running result is:  
 
 	abcd
