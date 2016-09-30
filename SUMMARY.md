@@ -41,3 +41,4 @@
 * [Select operation](posts/select-operation.md)
 * [Need not close every channel](posts/need-not-close-every-channel.md)
 * [Processing JSON object](posts/processing-json-object.md)
+* [Use sync.WaitGroup to synchronize goroutines](posts/use-sync-waitgroup-to-synchronize-goroutines.md)
